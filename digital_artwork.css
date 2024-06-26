@@ -1,0 +1,75 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    color: #4CAF50;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+}
+
+nav a {
+    color: #4CAF50;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+/* Portfolio styles */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 1em);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img,
+.portfolio-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-top: 2px solid #333;
+}
